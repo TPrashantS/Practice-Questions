@@ -30,7 +30,7 @@ class Solution {
             if(hm.containsKey(req)){
                 return new int[]{hm.get(req), i};
             }
-            hm.put(nums[i], i);
+            hm.put(nums[i],i);
         }
         return new int[]{-1,-1};
     }
