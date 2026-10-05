@@ -7,7 +7,7 @@ class Solution {
 
         for(int i = 0; i < n; i++){
             
-            low += (s.charAt(i) == '(' ? 1: -1); //if open then + 1 and if close then - 1 and if star then here it would count as close bracket
+            low += (s.charAt(i) == '(' ? 1: -1);
             high += (s.charAt(i) == ')' ? -1: 1);
 
             if(high < 0) return false;
